@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F33A4FC-1AC3-49BA-8A76-2B3DA430E2C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OnlineMusicStore.UI</RootNamespace>
+    <AssemblyName>OnlineMusicStore.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.6\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainForm.Designer.cs">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumForms\AddAlbumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlbumForms\AddAlbumForm.Designer.cs">
+      <DependentUpon>AddAlbumForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumForms\AlbumBrowserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlbumForms\AlbumBrowserForm.Designer.cs">
+      <DependentUpon>AlbumBrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumForms\AlbumDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlbumForms\AlbumDetailForm.Designer.cs">
+      <DependentUpon>AlbumDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumForms\EditAlbumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlbumForms\EditAlbumForm.Designer.cs">
+      <DependentUpon>EditAlbumForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumForms\ManageAlbumsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlbumForms\ManageAlbumsForm.Designer.cs">
+      <DependentUpon>ManageAlbumsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistForms\AddArtistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArtistForms\AddArtistForm.Designer.cs">
+      <DependentUpon>AddArtistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistForms\ArtistDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArtistForms\ArtistDetailForm.Designer.cs">
+      <DependentUpon>ArtistDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistForms\EditArtistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArtistForms\EditArtistForm.Designer.cs">
+      <DependentUpon>EditArtistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistForms\ManageArtistsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArtistForms\ManageArtistsForm.Designer.cs">
+      <DependentUpon>ManageArtistsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenreForms\AddGenreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenreForms\AddGenreForm.Designer.cs">
+      <DependentUpon>AddGenreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenreForms\EditGenreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenreForms\EditGenreForm.Designer.cs">
+      <DependentUpon>EditGenreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenreForms\ManageGenresForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenreForms\ManageGenresForm.Designer.cs">
+      <DependentUpon>ManageGenresForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderForms\CartDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderForms\CartDetailForm.Designer.cs">
+      <DependentUpon>CartDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderForms\OrderHistoryDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderForms\OrderHistoryDetailForm.Designer.cs">
+      <DependentUpon>OrderHistoryDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderForms\OrderHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderForms\OrderHistoryForm.Designer.cs">
+      <DependentUpon>OrderHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SongForms\AddSongForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SongForms\AddSongForm.Designer.cs">
+      <DependentUpon>AddSongForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SongForms\EditSongForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SongForms\EditSongForm.Designer.cs">
+      <DependentUpon>EditSongForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SongForms\ManageSongsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SongForms\ManageSongsForm.Designer.cs">
+      <DependentUpon>ManageSongsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\EditUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\EditUserForm.Designer.cs">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ManageUsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\ManageUsersForm.Designer.cs">
+      <DependentUpon>ManageUsersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\PasswordHelper.cs" />
+    <Compile Include="Helper\WebApiHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserForms\AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserMainForm.Designer.cs">
+      <DependentUpon>UserMainForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlbumForms\AddAlbumForm.resx">
+      <DependentUpon>AddAlbumForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlbumForms\AlbumBrowserForm.resx">
+      <DependentUpon>AlbumBrowserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlbumForms\AlbumDetailForm.resx">
+      <DependentUpon>AlbumDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlbumForms\EditAlbumForm.resx">
+      <DependentUpon>EditAlbumForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlbumForms\ManageAlbumsForm.resx">
+      <DependentUpon>ManageAlbumsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArtistForms\AddArtistForm.resx">
+      <DependentUpon>AddArtistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArtistForms\ArtistDetailForm.resx">
+      <DependentUpon>ArtistDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArtistForms\EditArtistForm.resx">
+      <DependentUpon>EditArtistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArtistForms\ManageArtistsForm.resx">
+      <DependentUpon>ManageArtistsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenreForms\AddGenreForm.resx">
+      <DependentUpon>AddGenreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenreForms\EditGenreForm.resx">
+      <DependentUpon>EditGenreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenreForms\ManageGenresForm.resx">
+      <DependentUpon>ManageGenresForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderForms\CartDetailForm.resx">
+      <DependentUpon>CartDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderForms\OrderHistoryDetailForm.resx">
+      <DependentUpon>OrderHistoryDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderForms\OrderHistoryForm.resx">
+      <DependentUpon>OrderHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SongForms\AddSongForm.resx">
+      <DependentUpon>AddSongForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SongForms\EditSongForm.resx">
+      <DependentUpon>EditSongForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SongForms\ManageSongsForm.resx">
+      <DependentUpon>ManageSongsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\EditUserForm.resx">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ManageUsersForm.resx">
+      <DependentUpon>ManageUsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserForms\AddUserForm.resx">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMainForm.resx">
+      <DependentUpon>UserMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SalesOrderDetailForms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineMusicStore.API\OnlineMusicStore.API.csproj">
+      <Project>{bca8453a-4cb2-482c-ac25-1b2d0d917ce1}</Project>
+      <Name>OnlineMusicStore.API</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
